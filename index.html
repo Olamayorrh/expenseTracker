@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <script src="./app.js" defer></script>
+    <title>Expense Tracking App</title>
+</head>
+<body>
+      <div class="container">
+            <h1>Expense Tracking App</h1>
+            
+                <div class="container1">
+                    <div class="container2"> 
+
+                        <form action="#">
+                        <div class="budget formInput">
+                            <label for="budget">Your Budget:</label>
+                            <input type="number" id="budget" placeholder="Enter Budgetted Amount">
+                        </div>
+
+                        <div class="productDes formInput">
+                            <label for="productDes">Product Description:</label>
+                            <input type="text" id="productDes" placeholder="Enter product Name">
+                        </div>
+
+                        <div class="price formInput">
+                            <label for="price">product Price:</label>
+                            <input type="number" id="price" placeholder="Enter Product Price">
+                        </div>
+
+                        <div class="quantity formInput">
+                            <label for="quantity">Product Quantity:</label>
+                            <input type="number" id="quantity" placeholder="Enter quantity of product">
+                        </div>
+
+                        <button id="btn">Add Expense</button>
+
+                    </form>
+                    </div>
+
+                    <div class="container3">
+                        <div class="analysis">
+                            <div class="budgetBox box">
+                                <div class="icon icon1"><i class="fa-solid fa-wallet"></i></div>
+                                <div class="sum bud">
+                                    <h4>Budget</h4>
+                                    <p id="budgetAmt">0.00</p>
+                                </div>
+                                
+                            </div>
+
+                            <div class="ExpenseBox box">
+                                <div class="icon icon2"><i class="fa-solid fa-money-bill"></i></div>
+                                <div class="sum exp">
+                                    <h4>Total Expenses</h4>
+                                    <p id="totalExp">0.00</p>
+                                </div>
+                            </div>
+
+                            <div class="balanceBox box">
+                                <div class="icon icon3"><i class="fa-solid fa-money-check-dollar"></i></div>
+                                <div class="sum bal">
+                                    <h4>Balance</h4>
+                                    <p id="totalBal">0.00</p>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+
+
+                        <div class="description">
+                            <h2>Budget Details</h2>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        
+                                        <th>Description</th>
+                                        <th>Amount</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="list">
+                                    
+                                </tbody>
+                            </table>
+                           
+                        </div>
+                    </div>
+
+            </div>
+
+            
+    </div>
+</body>
+</html>
