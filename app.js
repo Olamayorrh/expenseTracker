@@ -22,7 +22,7 @@ btn.addEventListener("click", (e)=>{
 
     if((productDes.value.length && price.value.length) > 0){
         Db.push({
-                
+                id: Db.length + 1,
                 desc: productDes.value,
                 
                 amount: parseInt(price.value) * parseInt(quantity.value)
